@@ -1,0 +1,106 @@
+.dangeraler {
+  width: 100%;
+  text-align: center;
+}
+
+.imagen {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darkslategray;
+  width: 100%;
+  height: 100%;
+}
+
+.imagen__border {
+  position: absolute;
+  background: none;
+  border: 5px solid whitesmoke;
+  width: 80%;
+  height: 80%;
+}
+.imagen__border--ext {
+  position: absolute;
+  background: none;
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    10% 100%,
+    10% 10%,
+    90% 10%,
+    90% 90%,
+    10% 90%,
+    10% 100%,
+    100% 100%,
+    100% 0%
+  );
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+}
+.imagen__imagen {
+  width: 95%;
+}
+.imagen__name {
+  position: absolute;
+  width: 2%;
+  top: 9%;
+  left: 1%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.imagen__id {
+  position: absolute;
+  top: 0;
+  left: 12%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.card {
+  background-color: #478a70;
+  background-image: url("../assets/images/pokeball.svg");
+  background-size: 45%;
+  background-position: bottom right;
+  color: whitesmoke;
+  background-repeat: no-repeat;
+  border-radius: 4%;
+  position: relative;
+}
+.type {
+  display: flex;
+  justify-content: center;
+}
+.type__img {
+  width: 15%;
+}
+.card__title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.card__char {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  list-style-type: none;
+}
+.card__item {
+  background-color: whitesmoke;
+  color: rgb(48, 48, 48);
+  border-radius: 5px;
+  margin: 2px;
+  border: 3px solid whitesmoke;
+}
+.sprite {
+  background-color: aqua;
+}
+.sprite__img {
+  position: absolute;
+  bottom: 0%;
+  right: -1%;
+  width: 45%;
+}
